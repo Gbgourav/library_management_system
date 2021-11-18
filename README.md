@@ -1,6 +1,6 @@
 # library_management_system
-This is the library management system by using django. In this web site user can register his book record 
-admin can get details of user which help admin to get books details record in his library...
+#This is the library management system by using django. In this web site user can register his book record 
+#admin can get details of user which help admin to get books details record in his library...
 
 #models.py here we can create book entry tables this is responsible to create table in our data base alsoit interects with serializer class
 
@@ -21,8 +21,6 @@ admin can get details of user which help admin to get books details record in hi
 # home, about and index these are the basic func to render the html pages if 
 # someone hit the url for eg: http://127.0.0.1:8000/home  then home funcation will 
 # call and it will render user request to the index.html page 
-
-
 
 # I create a class by using inbult SignUpForm class to register user. it looks like models class but django provide some builtin 
 # features to create login page, logout page and change passwored features I took one the SignUpForm class 
