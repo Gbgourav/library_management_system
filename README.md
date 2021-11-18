@@ -12,24 +12,18 @@
 #I usered the ViewSet class of django to create API funcations. django provide inbuilt ViewSet. We can improt this from the reset_framework. that does not provide any method like post() get() and many other that means it easy and time saving option to create api.
 #In authentication_class I have used SessionAuthentication because this allows user
 # to get inbuilt login and logout page while access the api and its more secure then BasicAuthentication
-
-
 # In usered permission_class I have used IsAdminUser. This class will only allow those users whose 
 # staff status is enabled of eg: if superuser enabled staff status of user then user can access the api's 
 # otherwise user will getting an authentication error.
-
 # home, about and index these are the basic func to render the html pages if 
 # someone hit the url for eg: http://127.0.0.1:8000/home  then home funcation will 
 # call and it will render user request to the index.html page 
-
 # I create a class by using inbult SignUpForm class to register user. it looks like models class but django provide some builtin 
 # features to create login page, logout page and change passwored features I took one the SignUpForm class 
 # I added some additinol fields like passwored confirmation and email. I userd bootstrap form class "form-control" this class give a good UI to the user.  
-
 # I used UserCreationForm, AuthenticationForm, UsernameField. These are the inbuilt features of django. UserCreationForm is used for creating a 
 # new user that can use our web application.AuthenticationForm gives permissions: Binary (yes/no) flags designating whether a user may perform a certain task.
 # if user is authentacated it will allow user. AuthenticationForm it define the forms fields.
-
 # "Widget" representation of an HTML input element and "fiels" is used data types to store a particular type of data. For example, to store an integer, IntegerField
 
 
