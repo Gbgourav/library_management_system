@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}Create{% endblock title %}
+
+{% block body %}
+<html>
+
+<head>
+  <style>
+    .center {
+      margin: auto;
+      width: 100%;
+      border: 3px;
+      padding: 5px;
+    }
+  </style>
+
+  <style>
+    .form-control {
+      background-color: white;
+      color:black;
+      font-style:oblique;
+      
+    }
+  </style>
+  <style>
+    .form-label {
+      color:black;
+      font-style:oblique;
+    }
+  </style>  
+
+  <style>
+    .bs{
+    	margin: 20px;
+      align-self:flex-end;
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="center">
+    <img src="/static/6000.jpg" class="d-block w-100" alt="...">
+    <div class="strip">
+      <h2 style="text-align:center" >Book Entry</h2>
+    </div>
+  </div>
+  <div class="container" my-4 py-5>
+    <form method="post" action="/bookEntry">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="name" class="form-control" name="name" id="book" placeholder="enter your name">
+        <label for="book" class="form-label">Book</label>
+        <input type="book" class="form-control" name="book" id="book" placeholder="enter your book name">
+        <label for="author" class="form-label">Author Name</label>
+        <input type="author" class="form-control" name="author" id="author" placeholder="enter the author name">
+      <div class="mb-3">
+        <label for="desc" class="form-label">Send your message</label>
+        <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+        <button class="btn btn-primary" type="submit">submit</button>
+        <a href="/api" class="btn btn-danger" role="button">Click here if your are an admin</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
+{% endblock body %}

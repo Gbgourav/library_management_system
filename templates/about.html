@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+
+{% block title %}about{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .strip {
+            float: left;
+            width: 100%;
+            length: 10%;
+            text-align: center;
+            background-color: #000000;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        .about-section {
+            padding: 80px;
+            text-align: center;
+            background-image: url("/static/420.jpg");
+            height: 100%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: width 80% background-color: #FFFFFF;
+            color: white;
+        }
+
+
+        .container {
+            padding: 15 5px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p> MY Library Management System is a software used to manages the catalog of a library.This helps to keep the records of whole transactions of the books available in the library.
+            Add Multiple Library, Add Book Category, Add Book Stock, Search Book, Issue Book, Request Book, Add Book Location, All Issued Books, All Requested Books, Books Over due date,
+            Return Book.
+            Add Class, Section, Student Admission, Mark Attendance, Send Attendance SMS, SMS Report, Homework, Indiscipline/Misbehave, Update/Delete Students, Teachers Add Delete, Get Details 
+            of All Students
+            AmpleTrails provides Library Management System which is very easy to use and fulfills all the requirement of a librarian. There are many features which helps librarian to keep records of available books as well as issued books. This software is available in both mode i.e. web-based or local host based.  
+            We provide best Library Management System of this planet.
+        </p>
+    </div>
+
+    <div class="strip">
+        <h2 style="text-align:center">Meet our Team</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/static/245.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>CEO & Founder</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Define business priorities. There are always long term goals but thats what they are long term.
+                        You are
+                        here right now and reaching long term goals is always uncertain. </p>
+                    <p>Founder@gmail.com</p>
+                    <p><a href="/login" class="button">Contact</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/static/350.jpg" alt="Mike" style="width:100%">
+                <div class="container">
+                    <h2>Art Director</h2>
+                    <p class="title">Art Director</p>
+                    <p>Communicate business priorities. Every Director must repeat the priorities enough times that it
+                        gets
+                        engrained in "all" employees. This is rather easy than it seems.</p>
+                    <p>Director@example.com</p>
+                    <p><a href="/login" class="button">Contact</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/static/785.jpg" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>Designer</h2>
+                    <p class="title">Gourav Bhandari</p>
+                    <p>Remove obstacles on the way of executing priorities. Creating and communicating priorities is a
+                        piece of
+                        cake compared to this one. I serve for this company from 12 years its wonderful feeling.</p>
+                    <p>Designer@example.com</p>
+                    <p><a href="/login" class="button">Contact</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>See us</h2>
+
+    <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+
+
+</body>
+
+</html>
+
+{% endblock body %}
