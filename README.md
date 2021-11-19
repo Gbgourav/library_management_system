@@ -1,4 +1,4 @@
-### This is the library management system. Its a website to register book records from the users and Admin can access user data by using CRUD API's. I used ViweSet classes to perform API funcations. I created register, login and logout page for user and admin as well. I used HTML,CSS,BOOTSTRAP in frontend. 
+### This is the library management system. Its a website to register book records from the users and Admin can access user data by using CRUD API's. I used ViewSet classes to perform API funcations. I created register, login and logout page for user and admin as well. I used HTML,CSS,BOOTSTRAP in frontend. 
 
 #### The Admin protal username is "superuser" and password is "superuser"
 
